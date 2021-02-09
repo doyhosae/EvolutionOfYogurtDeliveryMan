@@ -1,15 +1,8 @@
 :root{
-  /* color */
-  --color-black: #3f454d;
-  --color-white: #ffffff;
-  --color-blue: #3b88c3;
-  --color-yellow: #fbbe28;
-  --color-pink: #fd7f84;
-  --color-light-grey: #dfdfdf;
-
   /* size */
   --base-space: 8px;
-  --size-button: 60px;
+  --large-space: 40px;
+  --size-button: 40px;
   --size-border: 4px;
   --size-thumbnail: 50px;
   --font-size: 18px;
@@ -29,4 +22,27 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+header{
+  text-align: center;;
+}
+
+#btn{
+ all:unset;
+ padding: 10px 32px 10px 32px;
+ margin-top: var(--large-space);
+ border-radius: var(--size-border);
+ background-color: #ffc507;
+ box-shadow: 4px 4px 2px 1px rgba(0, 0, 0, 0.2);
+ transition-duration: 0.8s;
+}
+
+#btn:hover{
+  cursor: pointer;
+  transform: scale(1.2);
+}
+
+footer{
+  margin-top: var(--large-space);
 }
